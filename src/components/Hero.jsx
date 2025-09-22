@@ -1,20 +1,11 @@
+import CustomButton from "./Button";
+import Navbar  from "./Navbar";
 function Hero(){
     return (
-    <div className="relative h-screen w-full ">
+    <div className="relative h-screen w-full bg-radial-[at_50%_75%] from-sky-200 via-blue-400 to-indigo-900 to-90% ">
       {/* Grid background */}
-      <div>
-        
-      </div>
-      <div
-        className="absolute inset-0 bg-gray-900"
-        style={{
-          backgroundImage: `
-            linear-gradient(to right, rgba(255,255,255,0.05) 1px, transparent 1px),
-            linear-gradient(to bottom, rgba(255,255,255,0.05) 1px, transparent 1px)
-          `,
-          backgroundSize: '40px 40px',
-        }}
-      ></div>
+
+     <Navbar/>
     </div>
   );
 }
