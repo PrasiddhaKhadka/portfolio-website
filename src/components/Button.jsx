@@ -1,9 +1,19 @@
-function CustomButton({children}){
-    return(
-        <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={ ()=> console.log("Button Clicked")}>
-            
-        </button>
-    )
+function CustomButton({ 
+  children, 
+  onClick, 
+  width = "w-auto", 
+  textColor = "text-white",
+  height = "h-auto",
+  color = "bg-blue-500" 
+}) {
+  return (
+    <button
+      onClick={onClick}
+      className={`${color} ${width} ${height} ${textColor} px-4 py-2 rounded hover:opacity-90 transition break-words whitespace-normal text-center text-wrap`  }
+    >
+      {children}
+    </button>
+  )
 }
 
 export default CustomButton;
