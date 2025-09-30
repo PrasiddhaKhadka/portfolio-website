@@ -3,4 +3,49 @@
 @tailwind utilities;
  */
 
- @import "tailwindcss";
+@import "tailwindcss";
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../src/assets/fonts/Inter-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../src/assets/fonts/Inter-Bold.ttf') format('truetype');
+    font-weight: 700;  
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../src/assets/fonts/Inter-Italic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../src/assets/fonts/Inter-SemiBoldItalic.ttf') format('truetype');
+    font-weight: 600;  
+    font-style: italic; 
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../src/assets/fonts/Inter-Light.ttf') format('truetype');
+    font-weight: 300;  
+    font-style: normal; 
+}
+
+
+@theme {
+    --font-sans: 'Inter', sans-serif;
+    --color-primary: #CEFEFF;
+    --color-secondary: #033232;
+    --color-accent: #021D1D;
+    --color-dark: #010A09;
+    
+}
