@@ -15,9 +15,9 @@ function Hero({ aboutRef }){
       {/* Grid background */}
 
       <GridDesign children={<>
-            <div className="">
+            <div className="pt-20">
                 <div className="relative z-10 flex flex-col items-center justify-center text-center">
-                  <h1 className="text-3xl sm:text-5xl font-bold">
+                  <h1 className="text-2xl sm:text-5xl font-bold">
                     <span className="text-primary">
                       From Code To Deployments,
                     </span>
@@ -25,7 +25,7 @@ function Hero({ aboutRef }){
                       I write code that works.
                     </span>
                   </h1>
-                <p className="mt-7 max-w-xl text-center text-primary opacity-60 m-7">
+                <p className="text-sm sm:text-lg mt-7 max-w-xl text-center text-primary opacity-60 m-7">
                   Hi 👋 I’m Prasiddha, an engineer from Nepal. I specialize in writing clean, maintainable code, automating tasks, and developing reliable applications.
                 </p>
 
