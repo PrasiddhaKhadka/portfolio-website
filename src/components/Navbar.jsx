@@ -1,4 +1,5 @@
 import CustomButton from "./Button"
+import logo from "../assets/icons/logo.svg"; 
 
 function Navbar({ scrollToAbout}) {
     return (
@@ -12,7 +13,7 @@ function Navbar({ scrollToAbout}) {
                 rounded-r-2xl
             ">
                 
-                <img src="./src/assets/icons/logo.svg" alt="" />
+                <img src={logo} alt="logo" />
                 <li><button onClick={scrollToAbout}><a href="#" className="hover:text-gray-800 transition">About</a></button></li>
                 <li><a href="#" className="hover:text-gray-800 transition">Portfolio</a></li>
                 <li><a href="#" className="hover:text-gray-800 transition">Skills</a></li>
